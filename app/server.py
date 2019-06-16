@@ -9,10 +9,10 @@ from starlette.middleware.cors import CORSMiddleware
 from starlette.responses import HTMLResponse, JSONResponse
 from starlette.staticfiles import StaticFiles
 
-export_file_url = 'https://drive.google.com/uc?export=download&id=1hraKR_TIUbQQAwvS9QAPyRBzbXyvEcAa'
-export_file_name = 'export.pkl'
+export_file_url = 'https://www.dropbox.com/s/yercfqsbnj8kbjy/cataract.pkl?dl=1'
+export_file_name = 'cataract.pkl'
 
-classes = ['ckd','notckd']
+classes = ['normal','cataract']
 path = Path(__file__).parent
 
 app = Starlette()
